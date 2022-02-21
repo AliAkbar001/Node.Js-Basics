@@ -45,7 +45,7 @@ fs.appendFile('write.txt','\nA New Message 3',(err,data)=>{
     }
 })
 
-//Create New Folder
+//Create New Folder 
 fs.mkdir('new_folder',(err,data)=>{
     if(err){
         console.log(err)
@@ -67,7 +67,7 @@ if(!fs.existsSync('new_folder')){
     console.log("Folder Already Exit")
 }
 
-//Delete Folder
+//Delete Folder OR File
 if(fs.existsSync('new_folder')){
     fs.rmdir('new_folder',(err,data)=>{
         if(err){
