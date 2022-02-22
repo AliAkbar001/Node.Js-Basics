@@ -9,19 +9,23 @@ const server = http.createServer((req, res)=>{
         case '/':
             //route = route + 'index.html'
             //or
-            route += 'index.html';
+            route += 'index.html'
+            res.statusCode = 200
             break;
     
         case '/contact':
-            route += 'contact.html';
+            route += 'contact.html'
+            res.statusCode = 200
             break;
     
         case '/about':
-            route += 'about.html';
+            route += 'about.html'
+            res.statusCode = 200
             break;
     
         default:
-            route += '404.html';
+            route += '404.html'
+            res.statusCode = 404
             break;
     }
     res.setHeader('Content-Type', 'text/html')
